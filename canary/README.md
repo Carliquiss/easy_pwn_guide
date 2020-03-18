@@ -41,7 +41,7 @@ Run the binary with gdb until reaching the breakpoint
 ```
 gdb-peda$ run
 ```
-Execute the nex instruction of the program (it will call the "gets" where we have put the breakpoint and ask for an input):
+Execute the nex instruction of the program (it will call the "gets" where we have put the breakpoint and ask for an input, in this case we are going to write some 'A'):
 ```
 gdb-peda$ ni
 AAAAAAAAAAAAA
