@@ -46,7 +46,7 @@ Execute the nex instruction of the program (it will call the "gets" where we hav
 gdb-peda$ ni
 AAAAAAAAAAAAA
 ```
-Then we have to look at the rsp register to see where our input has been stored: 
+Then we have to look at the rsp register to see where our input has been stored ('A' in ASCII is 41): 
 ```
 gdb-peda$ x/20gx $rsp
 ```
