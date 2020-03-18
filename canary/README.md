@@ -19,10 +19,6 @@ gdb-peda$ info functions
 ```
 gdb-peda$ info functions flag 
 ```
-imagen de la direccion de memoria de flag
-```
-gdb-peda$ info functions flag 
-```
 
 ![FunctionAddres](images/function_address.png)
 
@@ -33,7 +29,7 @@ gdb-peda$ info functions flag
 ```
 gdb-peda$ disas main
 ```
-![Functions](images/get_address.png)
+![Functions](images/gets_address.png)
 
 ```
 gdb-peda$ b * 0x000000000040093b ("gets" memory address)
