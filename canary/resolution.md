@@ -23,7 +23,7 @@ imagen de la direccion de memoria de flag
 ```
 gdb-peda$ info functions flag 
 ```
-![Functions addresses](https://github.com/Carliquiss/easy_pwn_guide/blob/master/canary/images/function_address.png)
+![Functions addresses](./images/function_address.png)
 
 **3. Modify "main" returns memory address**:
 
@@ -31,7 +31,7 @@ gdb-peda$ info functions flag
 ```
 gdb-peda$ disas main
 ```
-![Functions addresses](images/get_address.png)
+![Functions](images/get_address.png)
 
 ```
 gdb-peda$ b * 0x000000000040093b ("gets" memory address)
