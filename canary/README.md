@@ -50,7 +50,7 @@ Then we have to look at the rsp register to see where our input has been stored:
 ```
 gdb-peda$ x/20gx $rsp
 ```
-![RSP values](images/rsp_address.png)
+![RSP values](images/rsp_values.png)
 
 **4. Next point**
 
