@@ -12,7 +12,7 @@ To see the differents functions on the binary:
 ```
 gdb-peda$ info functions
 ```
-![FunctionsAddresses](images/functions.png)
+![Functions Addresses](images/functions.png)
 
 
 **2. Get "flag" function memory address**: 
@@ -20,7 +20,7 @@ gdb-peda$ info functions
 gdb-peda$ info functions flag 
 ```
 
-![FunctionAddres](images/function_address.png)
+![Function Address](images/function_address.png)
 
 
 **3. Modify "main" returns memory address**:
@@ -30,18 +30,18 @@ First we should puts a breakpoint on the "vulnerable" method (for example gets o
 ```
 gdb-peda$ disas main
 ```
-![Functions](images/gets_address.png)
+![Gets address](images/gets_address.png)
 
 ```
 gdb-peda$ b *0x000000000040093b ("gets" memory address)
 ```
 
-Run the binary with gdb until reach the breakpoint
+Run the binary with gdb until reaching the breakpoint
 
 ```
 gdb-peda$ run
 ```
-Execute the nex instruction of the program (it will call the gets where we have put the breakpoint and ask for an input):
+Execute the nex instruction of the program (it will call the "gets" where we have put the breakpoint and ask for an input):
 ```
 gdb-peda$ ni
 AAAAAAAAAAAAA
@@ -50,7 +50,7 @@ Then we have to look at the rsp register to see where our input has been stored:
 ```
 gdb-peda$ x/20gx $rsp
 ```
+![RSP values](images/gets_address.png)
 
-
-**4. asd**
+**4. Next point**
 
