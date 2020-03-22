@@ -1,4 +1,4 @@
-# Easy Buffer Overflow 
+# Easy Canary Buffer Overflow 
 _Just some tips to remeber how to resolve easy buffer overflows_
 
 ## Tips 📝
