@@ -13,7 +13,7 @@ In each folder inside this repository should be the following files:
 ## Recommended software 👨🏻‍💻
 
 - [Checksec](https://github.com/slimm609/checksec.sh): Utility to check if a binary has canary, PIE, etc
-- [Pwntools](http://docs.pwntools.com/en/stable/about.html): Python library to solve challenges (used on all solutions scripts) 
+- [Pwntools](http://docs.pwntools.com/en/stable/about.html): Python library to solve challenges (used in all solutions scripts) 
 - [PEDA](https://github.com/longld/peda): gdb plugin to make gdb prettier 
 
 
