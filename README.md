@@ -17,3 +17,7 @@ In each folder inside this repository should be the following files:
 - [PEDA](https://github.com/longld/peda): gdb plugin to make gdb prettier 
 
 
+## Some tutorials/tips to learn more thins 👩🏽‍🏫  
+
+- [LiveOverflow Binary Explotation Youtube guide](https://www.youtube.com/watch?v=iyAyN3GFM7A&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN): Great Youtube Channel to learn tons of things. 
+- [Naetw repo with tips and useful syntax](https://github.com/Naetw/CTF-pwn-tips#overflow)
