@@ -1,7 +1,7 @@
 # Easy Canary Buffer Overflow 
-_Just some tips to remeber how to resolve easy buffer overflows_
+_Just some tips to remeber how to resolve easy buffer overflows with canary_
 
-## Tips 📝
+## Steps 📝
 **1.  Check the typical "win" or "flag" function on the binary with gdb (it's recommended to have [PEDA](https://github.com/longld/peda) installed to see registers and the program instructions in a prettier way).**
 
 To open the binary with gdb:
