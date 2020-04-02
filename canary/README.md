@@ -1,5 +1,5 @@
 # Easy Canary Buffer Overflow 
-_Just some tips to remeber how to resolve easy buffer overflows with canary. This challenge is from the amstrong2020 CTF_
+_Just some tips to remeber how to resolve easy buffer overflows with canary. This challenge is from the ångstromCTF_
 
 ## Steps 📝
 **1.  Check the typical "win" or "flag" function on the binary with gdb (it's recommended to have [PEDA](https://github.com/longld/peda) installed to see registers and the program instructions in a prettier way).**
@@ -67,17 +67,17 @@ To get the return address of the function we have to put a breakpoint on the "re
 ```
 gdb-peda$ breakpoint *0x400956
 ```
-When the execution reachs the breakpoint we have to see the first position of the stack where is the returing address of the program is: 
+When the execution reachs the breakpoint we have to see the first position of the stack where is the returning address of the program is: 
 ```
 gdb-peda$ x/gx $rsp
 ```
 ![RSP values](images/return_address.png)
 
-Finally to expltoit the second "gets" with the bufferoverflow we check how many bytes we have to write until the canary and then until the return address where we will put the flag return address obtained on the first step of this guide:
+Finally to exploit the second "gets" with the bufferoverflow we check how many bytes we have to write until the canary and then until the return address where we will put the flag return address obtained on the first step of this guide:
 
 ![RSP values](images/to_overwrite.png)
 
-So the payload will be: 56 chars until reach the canary, the canary obtained, 8 chars more and the flag function address (If you got a segfault in the movaps XMMWORD PTR [rsp+0x40],xmm0 instruction you have to align the stack jumping to other ret instruction and then set the target address as you can see in the solution.py script)
+So the payload will be: 56 chars until reach the canary, the canary obtained, 8 chars more and the flag function address (If you got a segfault in the `movaps XMMWORD PTR [rsp+0x40],xmm0` instruction you have to align the stack jumping to other ret instruction and then set the target address as you can see in the solution.py script)
 
 ```
 payload = 'A'*56

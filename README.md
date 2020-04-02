@@ -1,5 +1,5 @@
 # Easy PWN Guide ⚠️ in progress ⚠️
-_Binaries are from amstrongCTF and tamuCTF_
+_Binaries are from ångstromCTF and tamuCTF_
 
 ## Content 📚
 In each folder inside this repository should be the following files: 
