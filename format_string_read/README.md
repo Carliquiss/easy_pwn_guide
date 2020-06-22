@@ -3,6 +3,7 @@ _Just some tips to remeber how to resolve easy format strings.This challenge is 
 
 ## Steps 📝
 **1.  Get the source code with [Ghidra.](https://ghidra-sre.org/)**
+
 In this challenge we don't have the source code so the first step is try to get it using some reversing tools as radare or ghidra.
 
 ![main ret address](images/main_function_ghidra.png)
